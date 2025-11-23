@@ -5,15 +5,16 @@ interface AboutCardProps {
   title: string;
   description: string;
   subTitle: string;
+  backgroundImage?: string;
 }
 
-export function AboutCard({ title, description, subTitle }: AboutCardProps) {
+export function AboutCard({ title, description, subTitle, backgroundImage }: AboutCardProps) {
   return (
     <Card className="border-0 shadow-none">
       <CardContent 
         className="h-[453px] p-5 flex flex-col justify-center items-center rounded-2xl relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/image/placeholder.webp')"
+          backgroundImage: backgroundImage ? `url('${backgroundImage}')` : "url('/image/placeholder.webp')"
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60 rounded-2xl"></div>

@@ -4,9 +4,10 @@ import CountUp from "react-countup";
 interface StatsCardProps {
   count: string;
   title: string;
+  subtitle?: string;
 }
 
-export function StatsCard({ count, title }: StatsCardProps) {
+export function StatsCard({ count, title, subtitle }: StatsCardProps) {
   const getCountUpProps = (countString: string) => {
     const numericValue = parseFloat(countString.replace(/[^\d.]/g, ''));
     
@@ -22,7 +23,7 @@ export function StatsCard({ count, title }: StatsCardProps) {
 
   return (
     <Card className="border-0 shadow-none bg-transparent">
-      <h2 className="text-5xl font-bold text-gray-900">
+      <h2 className="text-5xl font-bold text-pink-500">
         <CountUp
           start={0}
           end={end}
@@ -33,9 +34,14 @@ export function StatsCard({ count, title }: StatsCardProps) {
           scrollSpyOnce
         />
       </h2>
-      <h3 className="mt-1 text-lg font-medium text-gray-900">
+      <h3 className="mt-2 text-lg font-semibold text-gray-900">
         {title}
       </h3>
+      {subtitle && (
+        <p className="text-sm text-gray-500 mt-1">
+          {subtitle}
+        </p>
+      )}
     </Card>
   );
 }

@@ -6,55 +6,136 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const FAQS = [
+// 服務相關問答
+const SERVICE_FAQS = [
   {
-    title: "1. How do I register for the AI Conference 2023?",
-    desc: "You can register for the AI Conference 2023 by visiting our registration page. Follow the simple steps to complete your registration and secure your spot at the conference.",
+    title: "1. 什麼是女性專屬健身房？有什麼特別之處？",
+    desc: "WOW FITNESS 的女性專屬健身房（設有女性專屬區域）是特別為女性會員設計的獨立健身空間。在這個區域內，只有女性會員和女性教練，讓您可以更自在、更專注地進行訓練。我們深知女性在運動時可能會有的顧慮，因此提供了一個完全舒適、無壓力的健身環境，讓您可以盡情揮灑汗水，無需擔心他人目光。",
   },
   {
-    title: "2. What are the registration fees, and what is included?",
-    desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+    title: "2. 我從未接觸過健身，完全是新手，適合參加嗎？",
+    desc: "當然適合！WOW FITNESS 歡迎所有健身程度的女性加入。我們的專業教練會根據您的體能狀況、健康狀況及個人目標，為您量身訂製訓練計劃。從基礎動作教學到進階訓練，我們都會循序漸進地指導您，確保您在安全的前提下逐步進步。許多會員都是從零基礎開始，現在已經成為健身達人！",
   },
   {
-    title: "3. Can I get a refund if I need to cancel my registration?",
-    desc: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it? If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+    title: "3. 產後多久可以開始運動？產後修復課程包含哪些內容？",
+    desc: "一般建議自然產後 6-8 週、剖腹產後 8-12 週，經醫生評估許可後即可開始運動。我們的產後修復課程專為產後媽媽設計，包含腹直肌分離評估與修復、骨盆底肌強化訓練、核心肌群重建、體態調整及營養諮詢。教練會根據您的恢復狀況調整訓練強度，確保安全有效地幫助您恢復產前體態。",
   },
   {
-    title: "4. Will there be on-site registration available?",
-    desc: "I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything. If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+    title: "4. 你們有月費會籍嗎？一定要簽約嗎？",
+    desc: "WOW FITNESS 只提供一對一私人教練服務，不設月費會籍或團體課程。這意味著您無需支付固定月費，也不需要簽訂長期合約。我們採用按堂收費制度，您可以根據自己的時間和需求靈活預約課程，沒有任何壓力。這種模式讓您享有更高的私隱度、更專注的指導，以及更自由的時間安排。",
   },
   {
-    title: "5. What is the dress code for the conference?",
-    desc: "There's nothing I really wanted to do in life that I wasn't able to get good at. That's my skill. I'm not really specifically talented at anything except for the ability to learn. That's what I do. That's what I'm here for. Don't be afraid to be wrong because you can't learn anything from a compliment. I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything.",
+    title: "5. 一對一私人教練課程的收費如何？包含什麼服務？",
+    desc: "我們提供彈性的私人教練課程方案，收費依據課程堂數及訓練內容而定。課程包含：個人體能評估、客製化訓練計劃、一對一專業指導、飲食營養建議、定期進度追蹤及調整。建議您預約免費試堂，讓我們的教練了解您的需求後，為您推薦最適合的課程方案。歡迎透過預約系統或直接聯絡我們查詢詳細價格。",
+  },
+  {
+    title: "6. 如何預約試堂？需要準備什麼？",
+    desc: "您可以透過我們網站的預約系統、WhatsApp 或電話預約試堂。試堂當天請穿著舒適的運動服裝及運動鞋，攜帶毛巾和水瓶即可。我們會提供儲物櫃供您使用。試堂時，教練會先了解您的健身目標、健康狀況及運動經驗，然後帶您體驗適合的訓練內容，並介紹我們的設施和課程。整個過程約 60 分鐘。",
+  },
+  {
+    title: "7. 各分店的營業時間和地址在哪裡？",
+    desc: "WOW FITNESS 在香港設有六間分店，分別位於中環、銅鑼灣、旺角、尖沙咀、觀塘及荃灣。其中銅鑼灣、旺角、觀塘及荃灣分店設有女性專屬區域。所有分店營業時間為：週一至週五 9:00-23:00，週末及公眾假期 9:00-20:00。詳細地址請參閱我們的「分店位置」頁面，或直接聯絡我們查詢。",
+  },
+  {
+    title: "8. 銀髮族課程適合什麼年齡層？訓練會不會太激烈？",
+    desc: "我們的銀髮族專屬課程適合 55 歲以上的長者，無論您是否有運動經驗都可以參加。課程設計溫和漸進，著重於提升肌力、平衡感、關節靈活度及心肺功能，幫助預防跌倒、改善日常生活功能。教練會根據每位長者的身體狀況調整訓練強度，確保安全且有效。許多銀髮族會員在參加課程後，都明顯感受到體力改善、行動更靈活。",
+  },
+  {
+    title: "9. 你們有提供物理治療服務嗎？可以處理什麼問題？",
+    desc: "是的，我們有專業註冊物理治療師提供服務。可以處理運動傷害（如肌肉拉傷、關節扭傷）、慢性疼痛（如肩頸痛、腰背痛、膝關節痛）、術後復健、姿勢不良導致的問題等。治療師會進行詳細評估，制定個人化治療計劃，結合手法治療、運動治療及物理因子治療，幫助您恢復身體功能、減輕疼痛。物理治療服務需另外預約，歡迎查詢詳情。",
+  },
+];
+
+// 女性健身知識問答
+const FITNESS_KNOWLEDGE_FAQS = [
+  {
+    title: "10. 重訓會讓女性變得太壯嗎？我只想瘦身塑形，不想練出大肌肉。",
+    desc: "這是最常見的迷思！事實上，女性因為睪固酮分泌量僅為男性的 5-10%，要練出明顯肌肉塊是非常困難的。適度的重量訓練不但不會讓您變壯，反而能幫助您：提升基礎代謝率、打造緊實線條、改善體態、預防骨質疏鬆。您在雜誌或社交媒體上看到的「肌肉女」，都是經過多年高強度訓練、嚴格飲食控制，甚至使用補劑才能達成的。一般女性進行適度重訓，只會讓身材更緊實、曲線更優美，絕不會變成「金剛芭比」。",
+  },
+  {
+    title: "11. 生理期可以運動嗎？應該注意什麼？",
+    desc: "生理期是可以運動的，而且適度運動還能幫助緩解經痛和情緒波動！建議根據生理週期調整訓練強度：經期第 1-3 天（出血量較多）可以進行輕度運動，如散步、瑜伽、伸展；經期第 4-7 天（症狀緩解）可以恢復正常訓練，但避免過度激烈的核心訓練；排卵期前後（約第 14 天）是體能最佳時期，可以進行高強度訓練。每個人的身體狀況不同，如果感到不適，請務必休息。我們的女教練會根據您的生理週期，為您調整最適合的訓練計劃。",
+  },
+  {
+    title: "12. 女性減脂和男性有什麼不同？為什麼我老公吃一樣的東西卻瘦得比我快？",
+    desc: "女性減脂確實比男性更具挑戰性，主要原因包括：基礎代謝率較低（女性肌肉量天生較少）、荷爾蒙影響（雌激素會促進脂肪儲存，特別是臀部和大腿）、生理週期波動（經期前後體重可能波動 1-2 公斤）。因此，女性減脂需要更精準的策略：結合有氧和重訓（提升肌肉量以增加代謝）、注重蛋白質攝取（建議每公斤體重攝取 1.2-1.6 克）、配合生理週期調整訓練和飲食、保持耐心（女性健康減脂速度約每週 0.5-1 公斤）。我們的教練會根據女性生理特點，為您制定最有效的減脂計劃。",
+  },
+  {
+    title: "13. 如何改善梨形身材？我的下半身特別容易囤積脂肪。",
+    desc: "梨形身材（下半身較豐滿）是許多亞洲女性的體型特徵，這與基因和荷爾蒙有關。雖然無法改變脂肪分布的基因傾向，但可以透過訓練優化身材比例：全身性減脂（局部瘦身是迷思，需要透過飲食控制和有氧運動降低整體體脂）、強化上半身肌肉（訓練肩膀、背部、手臂，讓上下半身更平衡）、臀腿塑形訓練（深蹲、硬舉、臀推等動作，讓臀腿線條更緊實）、改善體態（矯正骨盆前傾、加強核心，讓身形看起來更修長）。我們的教練會針對梨形身材設計專屬訓練計劃，幫助您打造更勻稱的身材比例。",
+  },
+  {
+    title: "14. 更年期女性適合做什麼運動？我最近容易疲倦、體重也增加了。",
+    desc: "更年期（通常 45-55 歲）因為雌激素下降，女性會面臨代謝變慢、肌肉流失、骨質疏鬆、體重增加等問題。這個階段運動變得更加重要！建議的運動組合：重量訓練（每週 2-3 次，預防肌肉流失和骨質疏鬆）、有氧運動（每週 3-4 次，改善心血管健康和控制體重）、柔軟度訓練（瑜伽、伸展，改善關節靈活度和舒緩壓力）、平衡訓練（預防跌倒風險）。運動還能幫助改善更年期症狀，如熱潮紅、失眠、情緒波動。我們的教練會根據您的身體狀況，設計安全且有效的訓練計劃，幫助您順利度過更年期。",
+  },
+  {
+    title: "15. 為什麼女性特別容易有小腹？明明其他地方都不胖，就是小腹凸出。",
+    desc: "女性小腹凸出的原因很多，不一定是脂肪問題：內臟脂肪堆積（不良飲食習慣、壓力、缺乏運動）、腹直肌分離（產後常見，腹部肌肉分離導致腹部鬆弛）、骨盆前傾（姿勢不良、核心無力，導致小腹視覺上更凸）、腸胃脹氣（消化不良、食物不耐受）、荷爾蒙影響（經期前、更年期容易水腫和脂肪堆積）。改善方法包括：核心訓練（平板支撐、死蟲式、鳥狗式）、改善姿勢（矯正骨盆前傾）、飲食調整（減少精緻澱粉、增加纖維）、產後修復訓練（針對腹直肌分離）。我們的教練會先評估您的小腹成因，再制定針對性的解決方案。",
+  },
+  {
+    title: "16. 運動後多久可以進食？應該吃什麼才不會白練？",
+    desc: "運動後營養補充非常重要！建議在運動後 30-60 分鐘內（黃金補充期）攝取食物，這時身體對營養的吸收效率最高。理想的運動後餐應包含：優質蛋白質（幫助肌肉修復，如雞胸肉、魚肉、雞蛋、希臘優格、蛋白粉）、適量碳水化合物（補充肝醣，如地瓜、糙米、香蕉、燕麥）、比例建議（蛋白質:碳水化合物 = 1:2 到 1:3）。範例餐點：香蕉 + 蛋白粉奶昔、雞胸肉 + 地瓜、希臘優格 + 水果 + 燕麥、鮭魚 + 糙米飯。避免高油脂食物（會減緩吸收）和過度節食（會導致肌肉流失）。我們的教練會提供個人化的飲食建議，確保您的訓練效果最大化。",
+  },
+  {
+    title: "17. 如何預防運動時的尿滲問題？跳躍或深蹲時會有這個困擾。",
+    desc: "運動時的尿滲（應力性尿失禁）是許多女性，特別是產後媽媽的困擾，但這是可以改善的！主要原因是骨盆底肌無力（懷孕、生產、年齡增長、長期便秘等因素）。改善方法：凱格爾運動（每天 3 次，每次收縮 10 秒，重複 10-15 次）、核心訓練（強化深層核心肌群，支撐骨盆底肌）、呼吸訓練（學習正確的腹式呼吸，避免過度腹壓）、避免高衝擊運動（在骨盆底肌恢復前，暫時避免跳躍、跑步等）、物理治療（嚴重情況建議尋求專業物理治療師協助）。我們的產後修復課程特別注重骨盆底肌訓練，許多會員在訓練後都成功改善了這個問題。如有需要，我們也可以轉介專業物理治療師。",
   },
 ];
 
 export function Faq() {
-  const [openValue, setOpenValue] = useState<string>("item-0");
+  const [serviceOpenValue, setServiceOpenValue] = useState<string>("item-0");
+  const [knowledgeOpenValue, setKnowledgeOpenValue] = useState<string>("");
 
   return (
-    <section id="faq" className="py-8 px-8 lg:py-20">
+    <section id="faq" className="py-16 px-8 bg-white">
       <div className="container mx-auto">
-        <div className="text-center">
-          <h1 className="mb-4 text-5xl font-bold text-gray-900">
-            Frequently asked questions
+        <div className="text-center mb-16">
+          <h3 className="mb-2 text-base font-semibold text-pink-500">
+            常見問題 | FAQ
+          </h3>
+          <h1 className="mb-4 text-4xl font-bold text-gray-900">
+            您可能想知道的問題
           </h1>
-          <p className="mx-auto mb-24 text-lg lg:w-3/5 text-gray-500">
-            Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
-            address your most common queries and provide you with the
-            information you need to make the most of your conference experience.
+          <p className="mx-auto text-lg lg:w-3/5 text-gray-600">
+            我們整理了會員最常詢問的問題和專業的女性健身知識，希望能幫助您更了解 WOW FITNESS。
+            如有其他疑問，歡迎隨時聯絡我們。
           </p>
         </div>
 
-        <div className="mx-auto lg:max-w-screen-lg lg:px-20">
-          <Accordion type="single" collapsible value={openValue} onValueChange={setOpenValue}>
-            {FAQS.map(({ title, desc }, key) => (
+        {/* 服務相關問答 */}
+        <div className="mx-auto lg:max-w-screen-lg lg:px-20 mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-pink-500">
+            服務相關問答
+          </h2>
+          <Accordion type="single" collapsible value={serviceOpenValue} onValueChange={setServiceOpenValue}>
+            {SERVICE_FAQS.map(({ title, desc }, key) => (
               <AccordionItem key={key} value={`item-${key}`}>
-                <AccordionTrigger className="text-left text-gray-900">
+                <AccordionTrigger className="text-left text-gray-900 hover:text-pink-600">
                   {title}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="font-normal text-gray-500">
+                  <p className="font-normal text-gray-600 leading-relaxed">
+                    {desc}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+
+        {/* 女性健身知識 */}
+        <div className="mx-auto lg:max-w-screen-lg lg:px-20">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-pink-500">
+            女性健身知識
+          </h2>
+          <Accordion type="single" collapsible value={knowledgeOpenValue} onValueChange={setKnowledgeOpenValue}>
+            {FITNESS_KNOWLEDGE_FAQS.map(({ title, desc }, key) => (
+              <AccordionItem key={key} value={`knowledge-item-${key}`}>
+                <AccordionTrigger className="text-left text-gray-900 hover:text-pink-600">
+                  {title}
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="font-normal text-gray-600 leading-relaxed">
                     {desc}
                   </p>
                 </AccordionContent>
