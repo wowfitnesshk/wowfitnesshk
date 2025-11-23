@@ -8,6 +8,7 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  base: '/wowfitnesshk/',
   plugins,
   resolve: {
     alias: {
