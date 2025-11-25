@@ -25,6 +25,9 @@ export const translations: Record<Language, Record<string, any>> = {
       note: '* 標示為 設有女性專屬區域 分店',
       ctaBooking: '立即預約試堂',
       ctaLearn: '了解更多',
+      badge1: '✓ 只設一對一私人教練',
+      badge2: '✓ 無月費 無會員制',
+      badge3: '✓ 高度私隱保障',
     },
     
     // 服務特色
@@ -37,6 +40,8 @@ export const translations: Record<Language, Record<string, any>> = {
       nutritionEn: 'Nutrition Guidance',
       ladies: '女性專屬',
       ladiesEn: 'Ladies Only',
+      noFee: '無月費 無會員制',
+      noFeeEn: 'No Monthly Fee',
     },
     
     // 關於我們
@@ -57,6 +62,8 @@ export const translations: Record<Language, Record<string, any>> = {
         title: '個人化飲食建議支援',
         desc: '運動配合正確飲食才能事半功倍。專業教練會根據您的訓練目標，提供實用的飲食建議和營養指導，教您如何吃得健康又有效，讓訓練成果更顯著。',
       },
+      uniqueTitle: '✨ 獨特優勢：只設一對一私人教練 ✨',
+      uniqueDesc: '我們<strong>不提供月費會籍或團體課程</strong>，只專注於<strong>一對一私人教練服務</strong>。這意味著您享有更高的<strong>私隱度</strong>、更專注的指導、更靈活的時間安排，按需預約，更符合您的生活節奏。',
     },
     
     // 成就數據
@@ -230,6 +237,9 @@ export const translations: Record<Language, Record<string, any>> = {
       note: '* Ladies Only Branches',
       ctaBooking: 'Book a Trial',
       ctaLearn: 'Learn More',
+      badge1: '✓ One-on-One Personal Training Only',
+      badge2: '✓ No Monthly Fee, No Membership',
+      badge3: '✓ High Privacy Protection',
     },
     
     // Features
@@ -242,6 +252,8 @@ export const translations: Record<Language, Record<string, any>> = {
       nutritionEn: 'Diet Support',
       ladies: 'Ladies Only',
       ladiesEn: 'Women Exclusive',
+      noFee: 'No Monthly Fee',
+      noFeeEn: 'No Membership',
     },
     
     // About
@@ -259,9 +271,11 @@ export const translations: Record<Language, Record<string, any>> = {
         desc: 'No one-size-fits-all training plans. We create the most suitable training program based on your fitness goals, physical condition, and schedule. Regular progress assessments and plan adjustments ensure continuous improvement.',
       },
       service3: {
-        title: 'Personalized Nutrition Guidance',
-        desc: 'Exercise combined with proper nutrition yields better results. Professional trainers provide practical dietary advice and nutritional guidance based on your training goals, teaching you how to eat healthily and effectively for more significant results.',
+        title: 'Personalized Nutrition Support',
+        desc: 'Exercise combined with proper nutrition is the key to success. Our professional trainers provide practical dietary advice and nutritional guidance based on your training goals, teaching you how to eat healthily and effectively for better results.',
       },
+      uniqueTitle: '✨ Unique Advantage: One-on-One Personal Training Only ✨',
+      uniqueDesc: 'We <strong>do not offer monthly memberships or group classes</strong>, focusing exclusively on <strong>one-on-one personal training services</strong>. This means you enjoy higher <strong>privacy</strong>, more focused guidance, more flexible scheduling, and book on demand to better fit your lifestyle.',
     },
     
     // Stats

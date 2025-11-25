@@ -27,8 +27,8 @@ export function SponsoredBy() {
     },
     {
       icon: Shield,
-      title: '無月費 無會員制',
-      description: 'No Monthly Fee'
+      title: t('features.noFee'),
+      description: t('features.noFeeEn')
     },
   ];
 

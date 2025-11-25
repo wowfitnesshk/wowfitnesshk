@@ -37,12 +37,8 @@ export function AboutEvent() {
         {t('about.description')}
       </p>
       <div className="mb-12 p-6 bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl border-2 border-pink-200 max-w-4xl mx-4">
-        <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">✨ 獨特優勢：只設一對一私人教練 ✨</h3>
-        <p className="text-gray-700 text-center leading-relaxed">
-          我們<strong>不提供月費會籍或團體課程</strong>，只專注於<strong>一對一私人教練服務</strong>。
-          這意味著您享有更高的<strong>私隱度</strong>、更專注的指導、更靈活的時間安排，
-          按需預約，更符合您的生活節奏。
-        </p>
+        <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">{t('about.uniqueTitle')}</h3>
+        <p className="text-gray-700 text-center leading-relaxed" dangerouslySetInnerHTML={{ __html: t('about.uniqueDesc') }} />
       </div>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {ABOUT_INFO.map((props, idx) => (

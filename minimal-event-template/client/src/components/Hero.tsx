@@ -47,13 +47,13 @@ function Hero() {
             </p>
             <div className="mb-8 inline-flex flex-wrap items-center justify-center gap-3">
               <div className="bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-2 rounded-full">
-                <span className="text-white font-semibold text-sm md:text-base">✓ 只設一對一私人教練</span>
+                <span className="text-white font-semibold text-sm md:text-base">{t('hero.badge1')}</span>
               </div>
               <div className="bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-2 rounded-full">
-                <span className="text-white font-semibold text-sm md:text-base">✓ 無月費 無會員制</span>
+                <span className="text-white font-semibold text-sm md:text-base">{t('hero.badge2')}</span>
               </div>
               <div className="bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-2 rounded-full">
-                <span className="text-white font-semibold text-sm md:text-base">✓ 高度私隱保障</span>
+                <span className="text-white font-semibold text-sm md:text-base">{t('hero.badge3')}</span>
               </div>
             </div>
             <p className="text-sm text-pink-200 mb-8">
