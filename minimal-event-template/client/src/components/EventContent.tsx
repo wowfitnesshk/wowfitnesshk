@@ -43,8 +43,8 @@ const PROGRAMS = [
     category: "student",
   },
   {
-    title: "普拉提課程",
-    titleEn: "Pilates",
+    title: "普拉提課程（觀塘分店限定）",
+    titleEn: "Pilates (Kwun Tong Branch Only)",
     des: "結合傳統與現代普拉提技巧的專業課程，著重於核心力量、身體控制及柔軟度提升。透過精準的動作指導與呼吸配合，改善體態、增強肌肉線條並提升身心連結。課程適合各種程度學員，從基礎墊上普拉提到器械普拉提，幫助您建立穩定的核心力量與優雅體態。",
     desEn: "Professional program combining traditional and modern Pilates techniques, focusing on core strength, body control, and flexibility improvement. Through precise movement guidance and breathing coordination, improve posture, enhance muscle definition, and strengthen mind-body connection.",
     features: ["核心強化", "柔軟度提升", "體態改善", "身心平衡"],
@@ -53,8 +53,8 @@ const PROGRAMS = [
     category: "pilates",
   },
   {
-    title: "物理治療服務",
-    titleEn: "Physiotherapy",
+    title: "物理治療服務（中環、觀塘、荃灣、旺角都有物理治療師）",
+    titleEn: "Physiotherapy (Available at Central, Kwun Tong, Tsuen Wan, Mong Kok)",
     des: "由專業註冊物理治療師提供的全方位治療服務，針對運動傷害、慢性疼痛及術後復健提供專業評估與治療。結合手法治療、運動治療及物理因子治療，幫助您恢復身體功能、減輕疼痛並預防再次受傷。服務包含肌肉骨骼評估、疼痛管理、姿勢矯正及復健訓練。",
     desEn: "Comprehensive treatment services provided by professional registered physiotherapists, offering professional assessment and treatment for sports injuries, chronic pain, and post-operative rehabilitation. Combining manual therapy, exercise therapy, and physical modalities to help you recover function, reduce pain, and prevent re-injury.",
     features: ["傷害評估", "疼痛治療", "術後復健", "功能恢復"],
