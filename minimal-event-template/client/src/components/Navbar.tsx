@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Home, Info, Dumbbell, MapPin, Menu, X, Calendar, Instagram, Facebook, Globe, HelpCircle } from "lucide-react";
+import { Home, Info, Dumbbell, MapPin, Menu, X, Calendar, Instagram, Facebook, Globe, HelpCircle, LogIn } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface NavItemProps {
@@ -135,6 +135,17 @@ export function Navbar() {
             <Globe className="h-5 w-5 mr-1" />
             <span className="font-semibold">{language === 'zh' ? 'EN' : '中'}</span>
           </Button>
+
+          {/* 會員登入按鈕 */}
+          <Button 
+            size="sm" 
+            variant="outline"
+            className={`transition-colors font-semibold border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white`}
+            onClick={() => window.open('https://member-wow.lovable.app', '_blank')}
+          >
+            <LogIn className="h-4 w-4 mr-1" />
+            <span>{language === 'zh' ? '會員登入' : 'Member Login'}</span>
+          </Button>
           
           <Button 
             size="sm" 
@@ -186,6 +197,17 @@ export function Navbar() {
                 <Globe className="h-5 w-5" />
                 {language === 'zh' ? 'English' : '中文'}
               </button>
+            </li>
+            <li>
+              <a
+                href="https://member-wow.lovable.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 font-semibold text-pink-500 hover:text-pink-700 transition-colors"
+              >
+                <LogIn className="h-5 w-5" />
+                {language === 'zh' ? '會員登入' : 'Member Login'}
+              </a>
             </li>
           </ul>
         </div>
