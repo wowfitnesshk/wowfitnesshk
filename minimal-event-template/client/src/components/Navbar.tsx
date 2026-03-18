@@ -141,7 +141,7 @@ export function Navbar() {
             size="sm" 
             variant="outline"
             className={`transition-colors font-semibold border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white`}
-            onClick={() => window.open('/member', '_blank')}
+            onClick={() => window.open('https://wowfitness-member.com', '_blank')}
           >
             <LogIn className="h-4 w-4 mr-1" />
             <span>{language === 'zh' ? '會員登入' : 'Member Login'}</span>
@@ -200,7 +200,7 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href="/member"
+                href="https://wowfitness-member.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-semibold text-pink-500 hover:text-pink-700 transition-colors"
