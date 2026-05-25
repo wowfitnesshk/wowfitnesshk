@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappNumber = "85251771517"; // 格式：國家碼 + 號碼（去掉空格和特殊字符）
+  const whatsappNumber = "85251788688"; // 格式：國家碼 + 號碼（去掉空格和特殊字符）
   const message = "你好！我想查詢 WOW FITNESS 的課程資訊。"; // 預設訊息
 
   const handleClick = () => {

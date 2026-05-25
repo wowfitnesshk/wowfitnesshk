@@ -85,8 +85,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <Phone className="h-4 w-4 text-pink-500" />
-                <a href="https://wa.me/85251771517" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600">
-                  WhatsApp: +852 5177 1517
+                <a href="https://wa.me/85251788688" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600">
+                  WhatsApp: +852 5178 8688
                 </a>
               </div>
               <div className="flex gap-2 mt-4">

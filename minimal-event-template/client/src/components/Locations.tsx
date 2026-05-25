@@ -9,7 +9,7 @@ const LOCATIONS = [
     address: "中環皇后大道中110-116號永恆商業大廈10樓",
     addressEn: "10/F, Perpetual Commercial Building, 110-116 Queen's Road Central, Central",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: false,
     region: "港島區"
   },
@@ -19,7 +19,7 @@ const LOCATIONS = [
     address: "銅鑼灣登龍街18號V-POINT 22樓全層",
     addressEn: "22/F (Whole Floor), V-POINT, 18 Tang Lung Street, Causeway Bay",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: true,
     region: "港島區"
   },
@@ -29,7 +29,7 @@ const LOCATIONS = [
     address: "旺角家樂坊17樓1716-19室",
     addressEn: "Room 1716-19, 17/F, Gala Place, Mong Kok",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: true,
     region: "九龍區"
   },
@@ -39,7 +39,7 @@ const LOCATIONS = [
     address: "尖沙咀加連威老道德立大廈4樓",
     addressEn: "4/F, Tak Lee Building, Granville Road, Tsim Sha Tsui",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: false,
     region: "九龍區"
   },
@@ -49,7 +49,7 @@ const LOCATIONS = [
     address: "觀塘駿業街58號電訊數碼大樓5樓",
     addressEn: "5/F, Telecom Digital Building, 58 Tsun Yip Street, Kwun Tong",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: true,
     region: "九龍區"
   },
@@ -59,7 +59,7 @@ const LOCATIONS = [
     address: "荃灣灰窰角街8-10號第一亞洲中心一樓（Plaza 88 附近、爵悅庭對面）",
     addressEn: "1/F, First Asia Centre, 8-10 Hoi Shing Road, Tsuen Wan (Near Plaza 88, Opposite to The Dynasty)",
     hours: "週一至週五 9:00-23:00 | 週末及公眾假期 9:00-20:00",
-    phone: "+852 5177 1517",
+    phone: "+852 5178 8688",
     ladiesOnly: true,
     region: "新界區"
   },
@@ -125,7 +125,7 @@ export function Locations() {
                     <div className="flex gap-3">
                       <Phone className="h-5 w-5 text-pink-500 flex-shrink-0 mt-0.5" />
                       <a 
-                        href={`https://wa.me/85251771517`}
+                        href={`https://wa.me/85251788688`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-700 text-sm hover:text-pink-600 transition-colors"
