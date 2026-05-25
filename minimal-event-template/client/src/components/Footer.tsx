@@ -33,7 +33,7 @@ export function Footer() {
             <Button 
               size="lg"
               className="bg-green-500 hover:bg-green-600 text-white font-bold shadow-lg transition-all"
-              onClick={() => window.open('https://wa.me/85251771517', '_blank')}
+              onClick={() => window.open('https://wa.me/85251788688', '_blank')}
             >
               <Phone className="mr-2 h-5 w-5" />
               WhatsApp 查詢

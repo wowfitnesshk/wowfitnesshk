@@ -97,7 +97,7 @@ export function BookingForm() {
                   直接聯絡我們:
                 </p>
                 <a 
-                  href="https://wa.me/85251771517?text=你好！我想查詢 WOW FITNESS 的課程資訊。"
+                  href="https://wa.me/85251788688?text=你好！我想查詢 WOW FITNESS 的課程資訊。"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
@@ -108,7 +108,7 @@ export function BookingForm() {
                 <div className="text-center space-y-2">
                   <p className="text-sm text-gray-600">
                     <Phone className="inline h-4 w-4 mr-1" />
-                    +852 5177 1517
+                    +852 5178 8688
                   </p>
                   <p className="text-sm text-gray-600">
                     <Mail className="inline h-4 w-4 mr-1" />
